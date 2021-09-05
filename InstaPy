@@ -1,0 +1,14 @@
+from instapy import InstaPy
+
+jad = InstaPy(username = "user" , password = "pass")
+jad.login()
+
+
+jad.set_relationship_bounds(enabled = True, max_follomers = 200)
+
+jad.set_do_follow(True, percentage=100)
+jad.like_by_tags(["bmw", "steam"], amount = 3)
+jad.set_dont_like(["nsfw"])
+
+
+session.end()
